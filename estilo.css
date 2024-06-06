@@ -14,7 +14,7 @@
 }
 
 #sobre p {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -53,8 +53,8 @@ section {
 }
 
 section h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -67,14 +67,14 @@ footer {
 .servicos-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 35px;
 }
 
 .servico {
     text-align: center;
     padding: 20px;
     border: 2px solid #ccc;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 .servico img {
@@ -86,5 +86,46 @@ footer {
     margin-top: 10px;
     text-align: justify;
     font-size: 15px;
+}
+
+@media only screen and (max-width: 600px){
+
+    .header-content {
+        flex-direction: column; /* Muda a direção do flexbox para coluna */
+        justify-content: space-between;
+        align-items: center; /* Alinha os itens ao centro */
+  }
+    header h1 {
+        margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+    }
+    nav {
+        margin-top: 20px; /* Adiciona espaço acima da navegação */
+    }
+    
+    /* Estilos para os links da lista de navegação */
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        text-decoration: none; /* Remove a sublinhado dos links */
+        color: #fff; /* Cor do texto */
+    }
+
+    nav ul li{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 0 10px; /* Ajusta o preenchimento da container para telas menores */
+        font-size: 20px; /* Tamanho da fonte */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte padrão */
+    }
+
+    section {
+        padding: 30px 0; /* Ajusta o preenchimento da section para telas menores */
+    }
+    .servicos-grid {
+        grid-template-columns: 1fr; /* Altera para uma coluna em telas menores */
+    }
 }
 
